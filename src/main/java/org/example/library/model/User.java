@@ -5,9 +5,8 @@ public class User {
     private String name;
     private String surname;
 
-    public User(String name, String surname) {
-        User.lastID++;
-        this.ID = lastID;
+    public User(int ID, String name, String surname) {
+        this.ID = ID;
         this.name = name;
         this.surname = surname;
     }
@@ -35,6 +34,4 @@ public class User {
     public void setSurname(String surname) {
         this.surname = surname;
     }
-
-    private static int lastID = 0;
 }
